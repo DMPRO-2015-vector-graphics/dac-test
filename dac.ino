@@ -14,18 +14,22 @@ void setup() {
 // PORTB = y
 
 void loop() {
+  // (x,y) = (0,0)
   PORTD = B00000100;
   PORTB = B00000100;
   delayMicroseconds(1);
-  
+
+  // (x,y) = (1,0)
   PORTD = B00001100;
   PORTB = B00000100;
   delayMicroseconds(1);
 
+  // (x,y) = (1,1)
   PORTD = B00001100;
   PORTB = B00001100;
   delayMicroseconds(1);
 
+  // (x,y) = (0,1)
   PORTD = B00000100;
   PORTB = B00001100;
 }
